@@ -1,0 +1,129 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #4d2323;
+    background-image: url(/assets/img/backgroundCV.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; 
+}
+* {
+    box-sizing: border-box;
+}
+header {
+    border: 1px solid red;
+}
+main {
+    border: 1px solid red;
+}
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.section {
+    width: 50%;
+  }
+footer {
+    border: 1px solid red;
+}
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+.nav-link {
+    padding: 0 20px;
+    line-height: 50px;
+    text-decoration: none;
+    transition: .3s;
+    cursor: pointer;
+}
+html {
+    scroll-behavior: smooth; 
+}
+.section-item a {
+    color: #829985;
+    text-decoration: none;  
+    transition: color 0.5s;
+}
+.section-item a:hover {
+    color: #4d2323;
+}
+@media (max-width: 768px) {
+    .section {
+      width: 100%;
+    }
+}
+.section-title {
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #000000;
+}
+.link {
+    text-decoration: none;
+    color: #829985;
+    transition: color 0.5s;
+}
+.link:hover {
+    color: #812f2f;
+}
+.photo-img {
+    width: 50%;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+.ul-icon {
+    list-style-type:none;
+    position: relative;
+    padding-left: 15px;
+}
+.ul-icon li {
+    text-indent: -20px;
+}
+.ul-icon li.discord::before {
+    content: url('https://api.iconify.design/simple-icons/discord.svg?width=24&height=24');
+    width: 20px;
+}
+.ul-icon li.email::before {
+    content: url('https://api.iconify.design/ic/round-alternate-email.svg?width=24&height=24');
+    width: 20px;
+}
+.ul-icon li.phone::before {
+    content: url('https://api.iconify.design/bi/phone-fill.svg?width=24&height=24');
+    width: 20px;
+}
+.ul-icon li.location::before {
+    content: url('https://api.iconify.design/akar-icons/location.svg?width=24&height=24');
+    width: 20px;
+}
+.section-item {
+    list-style-type: none;
+    position: relative;
+    padding-left: 0px;
+    text-indent: -25px;
+  } 
+.section-item::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: -40px;
+    width: 10px;
+    height: 10px; 
+    border: 1px solid #000000;
+    border-radius: 50%;
+}
