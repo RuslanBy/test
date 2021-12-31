@@ -9,7 +9,7 @@ body {
     font-size: 18px;
     font-weight: 400;
     line-height: 1.5;
-    color: #4d2323;
+    color: #702323;
     background-image: url(/assets/img/backgroundCV.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -18,11 +18,8 @@ body {
 * {
     box-sizing: border-box;
 }
-header {
-    border: 1px solid red;
-}
 main {
-    border: 1px solid red;
+    flex-grow:2;
 }
 .main-container {
     display: flex;
@@ -30,9 +27,6 @@ main {
 }
 .section {
     width: 50%;
-  }
-footer {
-    border: 1px solid red;
 }
 .container {
     max-width: 1440px;
@@ -55,12 +49,12 @@ html {
     scroll-behavior: smooth; 
 }
 .section-item a {
-    color: #829985;
+    color: #88250c;
     text-decoration: none;  
     transition: color 0.5s;
 }
 .section-item a:hover {
-    color: #4d2323;
+    color: #000000;
 }
 @media (max-width: 768px) {
     .section {
@@ -76,11 +70,11 @@ html {
 }
 .link {
     text-decoration: none;
-    color: #829985;
+    color: #000000;
     transition: color 0.5s;
 }
 .link:hover {
-    color: #812f2f;
+    color: #9c100b;
 }
 .photo-img {
     width: 50%;
@@ -126,4 +120,24 @@ html {
     height: 10px; 
     border: 1px solid #000000;
     border-radius: 50%;
+}
+.rss {
+    width: 121px;
+    height: 45px;
+    background-image: url("./assets/svg/rs_school_js.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+a img {
+    border: none;
+}
+.github-link {
+    width: 121px;
+    height: 45px;
+    background-image: url("./assets/svg/iconmonstr-github-1.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.year-footer {
+    margin:auto;
 }
